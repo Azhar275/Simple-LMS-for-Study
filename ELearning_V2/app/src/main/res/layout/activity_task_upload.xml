@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".task_upload">
+
+    <ImageView
+        android:id="@+id/back_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="Upload Tugas"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/back_4"
+        app:layout_constraintStart_toEndOf="@+id/back_4"
+        app:layout_constraintTop_toTopOf="@+id/back_4" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="358dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_title">
+
+        <ImageView
+            android:id="@+id/selectFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="127dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icons8_upload_100" />
+
+        <TextView
+            android:id="@+id/information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="Klik gambar diatas untuk memilih file"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/selectFile"
+            app:layout_constraintStart_toStartOf="@+id/selectFile"
+            app:layout_constraintTop_toBottomOf="@+id/selectFile" />
+
+        <Button
+            android:id="@+id/uploadFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="Upload"
+            app:layout_constraintEnd_toEndOf="@+id/information"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/information"
+            app:layout_constraintTop_toBottomOf="@+id/information" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
